@@ -10,7 +10,15 @@ namespace Game
       {
         return "PingPong";
       }
-      return "false";
+      else if (number % 3 == 0)
+      {
+        return "Ping";
+      }
+      else if (number % 5 == 0)
+      {
+        return "Pong";
+      }
+      return number.ToString();
     }
   }
 }
